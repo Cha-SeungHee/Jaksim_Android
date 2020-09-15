@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="410dp">
+
+	<Button
+		android:id="@+id/save_button"
+		android:layout_width="50dp"
+		android:layout_height="40dp"
+		android:text="@string/drink_record_dialog_save"
+		android:textSize="@dimen/dialog_plaintext_size"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/text_memo" />
+
+	<CheckBox
+		android:id="@+id/checkbox_soju"
+		android:layout_width="@dimen/dailog_checkbox_size"
+		android:layout_height="wrap_content"
+		android:buttonTint="@color/dark_grey"
+		android:checked="false"
+		android:text="@string/soju"
+		android:textSize="@dimen/dialog_plaintext_size"
+		app:layout_constraintBottom_toTopOf="@id/checkbox_yangju"
+		app:layout_constraintEnd_toStartOf="@id/checkbox_beer"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/guide_checkbox_top"
+		app:layout_constraintVertical_bias="0" />
+
+	<CheckBox
+		android:id="@+id/checkbox_beer"
+		android:layout_width="@dimen/dailog_checkbox_size"
+		android:layout_height="wrap_content"
+		android:buttonTint="@color/dark_grey"
+		android:checked="false"
+		android:gravity="center"
+		android:text="@string/beer"
+		android:textSize="@dimen/dialog_plaintext_size"
+		app:layout_constraintBottom_toTopOf="@id/checkbox_cocktail"
+		app:layout_constraintEnd_toStartOf="@+id/checkbox_makgeol"
+		app:layout_constraintStart_toEndOf="@id/checkbox_soju"
+		app:layout_constraintTop_toBottomOf="@+id/guide_checkbox_top" />
+
+	<CheckBox
+		android:id="@+id/checkbox_makgeol"
+		android:layout_width="@dimen/dailog_checkbox_size"
+		android:layout_height="wrap_content"
+		android:buttonTint="@color/dark_grey"
+		android:checked="false"
+		android:gravity="center"
+		android:text="@string/makgeol"
+		android:textSize="@dimen/dialog_plaintext_size"
+		app:layout_constraintBottom_toTopOf="@id/checkbox_goryang"
+		app:layout_constraintEnd_toStartOf="@+id/checkbox_wine"
+		app:layout_constraintStart_toEndOf="@id/checkbox_beer"
+		app:layout_constraintTop_toBottomOf="@+id/guide_checkbox_top"
+		app:layout_constraintVertical_bias="0" />
+
+	<CheckBox
+		android:id="@+id/checkbox_wine"
+		android:layout_width="@dimen/dailog_checkbox_size"
+		android:layout_height="wrap_content"
+		android:buttonTint="@color/dark_grey"
+		android:checked="false"
+		android:gravity="center"
+		android:text="@string/wine"
+		android:textSize="@dimen/dialog_plaintext_size"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/checkbox_makgeol"
+		app:layout_constraintTop_toBottomOf="@+id/guide_checkbox_top" />
+
+	<CheckBox
+		android:id="@+id/checkbox_yangju"
+		android:layout_width="@dimen/dailog_checkbox_size"
+		android:layout_height="wrap_content"
+		android:buttonTint="@color/dark_grey"
+		android:checked="false"
+		android:text="@string/yangju"
+		android:textSize="@dimen/dialog_plaintext_size"
+		app:layout_constraintBottom_toTopOf="@id/guide_checkbox_bottom"
+		app:layout_constraintEnd_toStartOf="@id/checkbox_cocktail"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/checkbox_soju" />
+
+	<CheckBox
+		android:id="@+id/checkbox_cocktail"
+		android:layout_width="@dimen/dailog_checkbox_size"
+		android:layout_height="wrap_content"
+		android:buttonTint="@color/dark_grey"
+		android:checked="false"
+		android:text="@string/cocktail"
+		android:textSize="@dimen/dialog_plaintext_size"
+		app:layout_constraintBottom_toTopOf="@id/guide_checkbox_bottom"
+		app:layout_constraintEnd_toStartOf="@id/checkbox_goryang"
+		app:layout_constraintStart_toEndOf="@+id/checkbox_yangju"
+		app:layout_constraintTop_toBottomOf="@+id/checkbox_beer" />
+
+	<CheckBox
+		android:id="@+id/checkbox_goryang"
+		android:layout_width="@dimen/dailog_checkbox_size"
+		android:layout_height="wrap_content"
+		android:buttonTint="@color/dark_grey"
+		android:checked="false"
+		android:text="@string/goryang"
+		android:textSize="@dimen/dialog_plaintext_size"
+		app:layout_constraintBottom_toTopOf="@id/guide_checkbox_bottom"
+		app:layout_constraintEnd_toStartOf="@id/checkbox_sake"
+		app:layout_constraintStart_toEndOf="@+id/checkbox_cocktail"
+		app:layout_constraintTop_toBottomOf="@+id/checkbox_makgeol" />
+
+	<CheckBox
+		android:id="@+id/checkbox_sake"
+		android:layout_width="@dimen/dailog_checkbox_size"
+		android:layout_height="wrap_content"
+		android:buttonTint="@color/dark_grey"
+		android:checked="false"
+		android:text="@string/sake"
+		android:textSize="@dimen/dialog_plaintext_size"
+		app:layout_constraintBottom_toTopOf="@id/guide_checkbox_bottom"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/checkbox_goryang"
+		app:layout_constraintTop_toBottomOf="@+id/checkbox_makgeol" />
+
+	<EditText
+		android:id="@+id/text_memo"
+		android:layout_width="0dp"
+		android:layout_height="70dp"
+		android:backgroundTint="@color/transparent"
+		android:gravity="center"
+		android:hint="@string/drink_record_dialog_memo"
+		android:inputType="textMultiLine"
+		android:maxLines="3"
+		android:textSize="@dimen/dialog_plaintext_size"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/memo"
+		app:layout_constraintVertical_bias="0" />
+
+	<TextView
+		android:id="@+id/date"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:gravity="start"
+		android:paddingEnd="0dp"
+		android:paddingStart="10dp"
+		android:text="@string/calendar_default_month_date"
+		android:textColor="@color/grey_00"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@id/guide_checkbox"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/guide_top" />
+
+	<TextView
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:gravity="start"
+		android:paddingEnd="0dp"
+		android:paddingStart="20dp"
+		android:text="@string/drink_record_dialog_menu_question"
+		android:textColor="@color/grey_00"
+		android:textSize="@dimen/daily_status_text_size"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@id/guide_checkbox_top"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/guide_checkbox" />
+
+	<TextView
+		android:id="@+id/drink_amount"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:gravity="start"
+		android:paddingEnd="0dp"
+		android:paddingStart="20dp"
+		android:text="@string/drink_record_dialog_amount_question"
+		android:textColor="@color/grey_00"
+		android:textSize="@dimen/dialog_plaintext_size"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@id/guide_drink_top"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/guide_drink" />
+
+	<TextView
+		android:id="@+id/memo"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:gravity="start"
+		android:paddingEnd="0dp"
+		android:paddingStart="20dp"
+		android:text="@string/drink_record_dialog_memo_question"
+		android:textColor="@color/grey_00"
+		android:textSize="@dimen/dialog_plaintext_size"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/guide_memo_top" />
+
+	<androidx.appcompat.widget.AppCompatSeekBar
+		android:id="@+id/seekbar_drink_amount"
+		style="@style/Widget.AppCompat.SeekBar.Discrete"
+		android:layout_width="300dp"
+		android:layout_height="20dp"
+		android:max="4"
+		app:layout_constraintBottom_toTopOf="@id/guide_drink_bottom"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/guide_drink_top" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guide_top"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_begin="0dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guide_checkbox"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_begin="50dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guide_checkbox_top"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_begin="80dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guide_checkbox_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_begin="150dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guide_drink"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_begin="180dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guide_drink_top"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_begin="210dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guide_drink_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_begin="240dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guide_memo_top"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_begin="270dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<TextView
+		android:id="@+id/month_title"
+		android:layout_width="50dp"
+		android:layout_height="wrap_content"
+		android:background="@android:color/transparent"
+		android:gravity="end"
+		android:orientation="horizontal"
+		android:textColor="@color/month_title"
+		android:textSize="22sp"
+		app:layout_constraintBottom_toTopOf="@id/guide_calendar_heading_bottom"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.1"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="@string/calendar_default_month" />
+
+	<TextView
+		android:id="@+id/year_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="10dp"
+		android:background="@android:color/transparent"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:textSize="15sp"
+		app:layout_constraintBottom_toTopOf="@id/guide_calendar_heading_bottom"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0"
+		app:layout_constraintStart_toEndOf="@+id/month_title"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="@string/calendar_default_year" />
+
+	<TextView
+		android:id="@+id/column_sunday"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/sunday"
+		android:textColor="@color/day_of_week_holiday"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toTopOf="@+id/guide_border_days_bottom"
+		app:layout_constraintEnd_toStartOf="@id/column_monday"
+		app:layout_constraintHorizontal_chainStyle="spread"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/guide_border_days_top" />
+
+	<TextView
+		android:id="@+id/column_monday"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/monday"
+		android:textColor="@color/day_of_week"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toTopOf="@+id/guide_border_days_bottom"
+		app:layout_constraintEnd_toStartOf="@id/column_tuesday"
+		app:layout_constraintHorizontal_chainStyle="spread"
+		app:layout_constraintStart_toEndOf="@id/column_sunday"
+		app:layout_constraintTop_toBottomOf="@id/guide_border_days_top" />
+
+	<TextView
+		android:id="@+id/column_tuesday"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/tuesday"
+		android:textColor="@color/day_of_week"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toTopOf="@+id/guide_border_days_bottom"
+		app:layout_constraintEnd_toStartOf="@id/column_wednesday"
+		app:layout_constraintHorizontal_chainStyle="spread"
+		app:layout_constraintStart_toEndOf="@id/column_monday"
+		app:layout_constraintTop_toBottomOf="@id/guide_border_days_top" />
+
+	<TextView
+		android:id="@+id/column_wednesday"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/wednesday"
+		android:textColor="@color/day_of_week"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toTopOf="@+id/guide_border_days_bottom"
+		app:layout_constraintEnd_toStartOf="@id/column_thursday"
+		app:layout_constraintHorizontal_chainStyle="spread"
+		app:layout_constraintStart_toEndOf="@id/column_tuesday"
+		app:layout_constraintTop_toBottomOf="@id/guide_border_days_top" />
+
+	<TextView
+		android:id="@+id/column_thursday"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/thursday"
+		android:textColor="@color/day_of_week"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toTopOf="@+id/guide_border_days_bottom"
+		app:layout_constraintEnd_toStartOf="@id/column_friday"
+		app:layout_constraintHorizontal_chainStyle="spread"
+		app:layout_constraintStart_toEndOf="@id/column_wednesday"
+		app:layout_constraintTop_toBottomOf="@id/guide_border_days_top" />
+
+	<TextView
+		android:id="@+id/column_friday"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/friday"
+		android:textColor="@color/day_of_week"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toTopOf="@+id/guide_border_days_bottom"
+		app:layout_constraintEnd_toStartOf="@id/column_saturday"
+		app:layout_constraintHorizontal_chainStyle="spread"
+		app:layout_constraintStart_toEndOf="@id/column_thursday"
+		app:layout_constraintTop_toBottomOf="@id/guide_border_days_top" />
+
+	<TextView
+		android:id="@+id/column_saturday"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/saturday"
+		android:textColor="@color/day_of_week"
+		android:textSize="12sp"
+		app:layout_constraintBottom_toTopOf="@+id/guide_border_days_bottom"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_chainStyle="spread"
+		app:layout_constraintStart_toEndOf="@id/column_friday"
+		app:layout_constraintTop_toBottomOf="@id/guide_border_days_top" />
+
+	<View
+		android:id="@+id/top_border_days"
+		android:layout_width="0dp"
+		android:layout_height="1dp"
+		android:background="@color/day_of_week_divider"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@id/guide_border_days_top"
+		app:layout_constraintVertical_bias="0" />
+
+	<View
+		android:id="@+id/bottom_border_days"
+		android:layout_width="0dp"
+		android:layout_height="1dp"
+		android:background="@color/day_of_week_divider"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/guide_border_days_bottom"
+		app:layout_constraintVertical_bias="0" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guide_calendar_heading_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_begin="40dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guide_border_days_top"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_begin="40dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guide_border_days_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_begin="60dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

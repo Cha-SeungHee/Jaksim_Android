@@ -1,0 +1,39 @@
+<resources>
+	<string name="app_name">JakSim</string>
+	<string name="dot">•</string>
+
+	<string name="soju">소 주</string>
+	<string name="beer">맥 주</string>
+	<string name="makgeol">막걸리</string>
+	<string name="wine">와 인</string>
+	<string name="yangju">양 주</string>
+	<string name="cocktail">칵테일</string>
+	<string name="goryang">고량주</string>
+	<string name="sake">사 케</string>
+
+	<string name="sunday">일</string>
+	<string name="monday">월</string>
+	<string name="tuesday">화</string>
+	<string name="wednesday">수</string>
+	<string name="thursday">목</string>
+	<string name="friday">금</string>
+	<string name="saturday">토</string>
+
+	<string name="calendar_default_year">2020</string>
+	<string name="calendar_default_month">12월</string>
+	<string name="calendar_default_month_date">12월 31일</string>
+
+	<string name="daily_drink_status_default_date">12.31</string>
+	<string name="daily_drink_status_menu">주 종</string>
+	<string name="daily_drink_status_memo">메 모</string>
+	<string name="daily_drink_status_default_menu">없 음</string>
+	<string name="daily_drink_status_amount">음 주 량</string>
+	<string name="daily_drink_status_default_amount">0</string>
+	<string name="daily_drink_status_default_memo">이 날에 대한 메모는 없어요 :)</string>
+
+	<string name="drink_record_dialog_menu_question">어떤 술을 드셨나요?</string>
+	<string name="drink_record_dialog_amount_question">얼마나 드셨나요?</string>
+	<string name="drink_record_dialog_memo_question">이 날 음주에 대한 간단한 메모를 남겨보세요 :)</string>
+	<string name="drink_record_dialog_memo">메 모</string>
+	<string name="drink_record_dialog_save">기록</string>
+</resources>

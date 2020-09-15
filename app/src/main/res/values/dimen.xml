@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="daily_status_text_size">14sp</dimen>
+    <dimen name="daily_status_name_dimension">50dp</dimen>
+    <dimen name="daily_status_count_dimension">20dp</dimen>
+    <dimen name="daily_status_text_margin_inside">5dp</dimen>
+    <dimen name="daily_status_text_margin_outside">10dp</dimen>
+    <dimen name="calendar_month_height_for_view">240dp</dimen>
+
+    <dimen name="dailog_checkbox_size">80dp</dimen>
+    <dimen name="dialog_plaintext_size">14sp</dimen>
+    <dimen name="dialog_heading_size">14sp</dimen>
+</resources>
